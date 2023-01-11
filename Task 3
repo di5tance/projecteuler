@@ -1,0 +1,13 @@
+#Projecteuler problem Largest prime number
+from math import sqrt
+a=600851475143 #number
+n=2 #Smallest prime number
+prime=0
+while(a > 1 and n < sqrt(600851475143)):
+  if(a%n==0):
+    prime=n
+    a=a/n
+  n=n+1
+print(a)
+print(n)
+print("Largest prime number is",prime)
