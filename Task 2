@@ -1,0 +1,15 @@
+#Projecteuler problem Even Fibonacci numbers
+a=1 #first number
+b=2 #second number
+total=2
+while(a and b <4000000):
+  a = a+b
+  b = a+b
+  if(a%2==0):
+    total=total+a
+  if(b%2==0):
+    total=total+b
+  
+print(a)
+print(b)
+print("Total is",total)
