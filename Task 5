@@ -1,0 +1,12 @@
+#Smallest multiple
+num=int(input("Enter the number "))
+a=2
+for n in range(2,num+1):
+  nm=n
+  multi=1
+  while nm%a!=0:
+    multi=multi+1
+    nm=n*multi
+  else:
+    a=nm
+print("Smallest multiple is",a)
