@@ -1,14 +1,14 @@
 #10001st prime
 from math import sqrt
-a=int(input("Which prime number position? ")) 
-acount=0
-num=1 
+a=int(input("Which prime number position? ")) #input
+acount=0 #prime number position counter
+num=1 #check for prime nunber starting from 1
 while(acount!=a):
-  num=num+1
-  for n in range (2,num+1):
-    if(num%n==0 and num==n):
+  num=num+1 
+  for n in range (2,num+1): #n used to check for prime number
+    if(num%n==0 and num==n): #num divisible by num and 1 only 
       acount = acount +1
-    if(num%n==0 and num!=n):
-      break
-print(acount)
-print("The prime number is ",num)
+    if(num%n==0 and num!=n): #num divisible by other numbers beside num and 1
+      break #stop loop
+print(acount) #for checking purpose
+print("The prime number is",num) #output
