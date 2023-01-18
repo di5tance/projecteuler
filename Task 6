@@ -1,0 +1,14 @@
+#10001st prime
+from math import sqrt
+a=int(input("Which prime number position? ")) 
+acount=0
+num=1 
+while(acount!=a):
+  num=num+1
+  for n in range (2,num+1):
+    if(num%n==0 and num==n):
+      acount = acount +1
+    if(num%n==0 and num!=n):
+      break
+print(acount)
+print(num)
