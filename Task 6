@@ -11,4 +11,4 @@ while(acount!=a):
     if(num%n==0 and num!=n):
       break
 print(acount)
-print(num)
+print("The prime number is ",num)
