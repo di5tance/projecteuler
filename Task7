@@ -1,0 +1,16 @@
+#Summation of primes
+from math import sqrt
+a=int(input("Summation of primes until ")) #input
+primesum=0 #summation of prime number
+num=1 #var for prime nunber
+
+while num!=a: #testing for prime numbers until a
+  num=num+1 
+  for n in range (2,num+1): #n used to check for prime number
+    if(n>sqrt(num)): #when n > sqrt(num), num is a prime number
+      primesum = primesum + num 
+      break
+    if(num%n==0 and num!=n): #num divisible by other numbers beside num and 1
+      break #stop loop
+print(num) #for checking purpose
+print("Sum is ",primesum) #output
