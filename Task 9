@@ -1,0 +1,18 @@
+#1000-digit Fibonacci number
+
+a = 1     #First number
+posa = 1  #position of first number
+b = 1     #Second number
+posb = 2  #position of first number
+
+while len(str(a))<1000 and len(str(b))<1000:
+  a = a+b
+  posa += 2
+  if(len(str(a))>=1000):
+    print(a)
+    print(posa)
+  b = a+b
+  posb += 2
+  if(len(str(b))>=1000):
+    print(b)
+    print(posb)
